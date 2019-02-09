@@ -21,5 +21,27 @@ npm install graphql-type-json
 
 
 then run###########
- 
+
  node config.js
+
+
+
+ mutation ($project: ProjectInputType) {
+   addProject (project:$project) {
+     id
+   }
+ }
+
+ 
+
+ {
+   "project": {
+     "project_name": "shreyanshu",
+     "project_description": "project demo 1",
+     "start_date": "12-02-2018",
+     "end_date": "24-12-2018",
+     "leader": "shreyanshu",
+     "members": "shreyanshu abc def",
+     "progress_rate": "5"
+   }
+ }

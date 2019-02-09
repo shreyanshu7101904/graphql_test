@@ -6,11 +6,11 @@ import cors from "cors";
 const app = express();
 app.use(cors());
 
-app.use('/pkagencies/graphql', graphqlHTTP({
+app.use('/graphql', graphqlHTTP({
   schema: schema,
   graphiql: true
 }));
 
-console.log('Starting server..');
+console.log('Starting graphql server..');
 
 app.listen(4001);
