@@ -17,6 +17,9 @@ npm install cors
 npm install --save-dev babel-plugin-transform-object-rest-spread
 
 
+npm install graphql-type-json
+
+
 then run###########
  
  node config.js
