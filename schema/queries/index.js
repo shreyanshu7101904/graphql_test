@@ -1,10 +1,11 @@
 import { GraphQLObjectType } from 'graphql'
-import {project } from './project'
+import {project, projects } from './project'
 
 const queries = new GraphQLObjectType({
     name: 'Rootquery',
     fields: () => ({
         ...project,
+        ...projects,
       })
     })
   export default queries

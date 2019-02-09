@@ -5,13 +5,13 @@ import { mongodb } from '../../lib/mongodb.lib'
 export default {
   project: {
     type: ProjectType,
-    description: "Get a specific user customer",
+    description: "Get a specific project",
     args: {
         id: { type: new GraphQLNonNull(GraphQLString) }
     },
     resolve: async function (parent, {id}) {
       const response = await mongodb.findByID(
-          'mxr-platform',
+          'shreyanshu',
           'projects',
           id
         );
