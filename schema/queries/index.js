@@ -4,7 +4,7 @@ import {project } from './project'
 const queries = new GraphQLObjectType({
     name: 'Rootquery',
     fields: () => ({
-        project,
+        ...project,
       })
     })
   export default queries
