@@ -56,6 +56,10 @@ class MongoDB {
 
 
   async search(db_name, collection_name, query, limit) {
+    var options = {
+          "limit": 50,
+          "sort":"ts_create"
+        };
     const client = await this.connect();
     const db = client.db(db_name);
     const collection = db.collection(collection_name);
@@ -67,7 +71,7 @@ class MongoDB {
         delete query['id']
       }
     }
-    const results = await collection.find(query).limit(limit).toArray()
+    const results = await collection.find({}, options).toArray()
     this.closeClient(client)
     for (let i = 0; i < results.length; i++){
       results[i].id = results[i]._id

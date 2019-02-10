@@ -3,8 +3,10 @@ import {
   GraphQLInputObjectType,
   GraphQLString,
   GraphQLFloat,
-  GraphQLNonNull
+  GraphQLNonNull,
+  GraphQLList
 } from "graphql";
+import GraphQLJSON from 'graphql-type-json';
 
 
 export const ProjectType = new GraphQLObjectType({
@@ -17,7 +19,7 @@ export const ProjectType = new GraphQLObjectType({
     start_date: { type: GraphQLString },
     end_date: { type: GraphQLString },
     leader: { type: GraphQLString },
-    members: { type: GraphQLString },
+    members: { type: GraphQLJSON },
     progress_rate: { type: GraphQLString },
     ts_update: {type: GraphQLString},
     ts_create: {type: GraphQLString},
@@ -34,7 +36,7 @@ export const ProjectInputType = new GraphQLInputObjectType ({
     start_date: { type: GraphQLString },
     end_date: { type: GraphQLString },
     leader: { type: GraphQLString },
-    members: { type: GraphQLString },
+    members: { type: GraphQLJSON },
     progress_rate: { type: GraphQLString },
   })
 });
@@ -50,7 +52,7 @@ export const ProjectUpdateInputType = new GraphQLInputObjectType ({
     start_date: { type: GraphQLString },
     end_date: { type: GraphQLString },
     leader: { type: GraphQLString },
-    members: { type: GraphQLString },
+    members: { type: GraphQLJSON },
     progress_rate: { type: GraphQLString },
   })
 });
