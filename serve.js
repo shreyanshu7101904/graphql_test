@@ -13,4 +13,4 @@ app.use('/graphql', graphqlHTTP({
 
 console.log('Starting graphql server..');
 
-app.listen(4001);
+app.listen(8080);
