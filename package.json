@@ -1,5 +1,5 @@
 {
-  "name": "graphql-type-json",
+  "name": "graphql-project",
   "version": "1.0.0",
   "description": "use this command to install all the required lib",
   "main": "config.js",
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/shreyanshu7101904/graphql_test#readme",
   "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
@@ -25,10 +26,8 @@
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.1.1",
-    "mongodb": "^3.1.13",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+    "graphql-type-json": "^0.2.1",
+    "mongodb": "^3.1.13"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
