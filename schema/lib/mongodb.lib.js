@@ -6,7 +6,7 @@ import 'babel-polyfill';
 
 class MongoDB {
   async connect() {
-    const mongodb_url = "mongodb://shreyanshu7101904:7101904@mongodb"
+    const mongodb_url = "mongodb://shreyanshu:7101904a@ds157723.mlab.com:57723/shreyanshu"
     const client = await MongoClient.connect(
       mongodb_url,
       { useNewUrlParser: true }
