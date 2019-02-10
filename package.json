@@ -1,0 +1,29 @@
+{
+  "name": "graphql-type-json",
+  "version": "1.0.0",
+  "description": "use this command to install all the required lib",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyanshu7101904/graphql_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreyanshu7101904/graphql_test/issues"
+  },
+  "homepage": "https://github.com/shreyanshu7101904/graphql_test#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1",
+    "mongodb": "^3.1.13"
+  },
+  "devDependencies": {}
+}
